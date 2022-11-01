@@ -143,10 +143,10 @@
                                             </p>
                                             <p class="ma-0 text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">Gerente de Compras</p>
                                             <div class="text--primary text-center">
-                                                <v-icon color="#19D3C5">mdi-star</v-icon>
-                                                <v-icon color="#19D3C5">mdi-star</v-icon>
-                                                <v-icon color="#19D3C5">mdi-star</v-icon>
-                                                <v-icon color="#19D3C5">mdi-star</v-icon>
+                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
                                             </div>
                                             <div class="mt-2 text-center" v-html="testim.Message"></div>
                                         </v-card-text>
@@ -170,10 +170,10 @@
                                         </p>
                                         <p class="ma-0 text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">{{ item.Ocupation }}</p>
                                         <div class="text--primary text-center">
-                                            <v-icon :color="i%2=== 0 ? '#19D3C5': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i%2=== 0 ? '#19D3C5': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i%2=== 0 ? '#19D3C5': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i%2=== 0 ? '#19D3C5': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
                                         </div>
                                         <div class="mt-2 text-center" v-html="item.Message"></div>
                                     </v-card-text>
