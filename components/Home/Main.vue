@@ -133,20 +133,20 @@
                         <v-sheet class="mx-auto bg-testimonios mb-10" max-width="97%">
                             <v-slide-group v-model="model" class="pa-4" active-class="success" show-arrows>
                                 <v-slide-item v-for="(testim, i) in pageHome.testimonials" :key="'t'+i">
-                                    <v-card class="my-2 mx-5" height="330" width="440" :color="i % 2 === 0 ? 'white': 'rgba(9, 187, 174, 1)'">
+                                    <v-card class="my-2 mx-5" height="330" width="440" :color="i+1 % 2 === 0 ? 'white': 'rgba(9, 187, 174, 1)'">
                                         <v-card-text>
-                                            <p class="font-archivo font-size-24 text-uppercase text-center font-weight-bold mt-2" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">
+                                            <p class="font-archivo font-size-24 text-uppercase text-center font-weight-bold mt-2" :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">
                                                 {{ testim.Company }}
                                             </p>
-                                            <p class="font-archivo font-size-20 ma-0 font-weight-bold text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">
+                                            <p class="font-archivo font-size-20 ma-0 font-weight-bold text-center" :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">
                                                 {{testim.Name }}
                                             </p>
-                                            <p class="ma-0 text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">Gerente de Compras</p>
+                                            <p class="ma-0 text-center" :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">Gerente de Compras</p>
                                             <div class="text--primary text-center">
-                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                                <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                                <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
                                             </div>
                                             <div class="mt-2 text-center" v-html="testim.Message"></div>
                                         </v-card-text>
@@ -160,20 +160,20 @@
                     <v-row v-if="windowSize < 1129">
                         <v-carousel :show-arrows="false" hide-delimiter-background class="mt-5 mb-16" height="380">
                             <v-carousel-item v-for="(item,i) in pageHome.testimonials" :key="i" >
-                                <v-card class="my-2 mx-4" height="300" :color="i % 2 === 0 ? 'white': 'rgba(9, 187, 174, 1)'">
+                                <v-card class="my-2 mx-4" height="300" :color="i+1 % 2 === 0 ? 'white': 'rgba(9, 187, 174, 1)'">
                                     <v-card-text>
-                                        <p class="font-archivo font-size-24 text-uppercase text-center font-weight-bold mt-2 " :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">
+                                        <p class="font-archivo font-size-24 text-uppercase text-center font-weight-bold mt-2 " :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">
                                             {{ item.Company }}
                                         </p>
-                                        <p class="font-archivo font-size-20 ma-0 font-weight-bold text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">
+                                        <p class="font-archivo font-size-20 ma-0 font-weight-bold text-center" :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">
                                             {{item.Name }}
                                         </p>
-                                        <p class="ma-0 text-center" :class="{'text-color-testimonios': i % 2 === 0, 'black--text': i % 2 !== 0 }">{{ item.Ocupation }}</p>
+                                        <p class="ma-0 text-center" :class="{'text-color-testimonios': i+1 % 2 === 0, 'black--text': i+1 % 2 !== 0 }">{{ item.Ocupation }}</p>
                                         <div class="text--primary text-center">
-                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
-                                            <v-icon :color="i % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
+                                            <v-icon :color="i+1 % 2 === 0 ? 'rgba(9, 187, 174, 1)': 'white'">mdi-star</v-icon>
                                         </div>
                                         <div class="mt-2 text-center" v-html="item.Message"></div>
                                     </v-card-text>
